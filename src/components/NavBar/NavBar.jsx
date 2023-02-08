@@ -1,12 +1,20 @@
+import { useState } from "react"
+import "./NavBar.css"
+
 export default function NavBar(){
+    const [active,setActive] = useState("Home")
     return (
         <>
             <main id="NavBar__main">
                 <ul id="NavList" >
-                    {["Home","About","Work","Portfolio","Contact","Footer"].map((item,index)=>{
+                    {["Home","About","Work","Portfolio","Contact"].map((item,index)=>{
                         return <li key={`${item} ${index}`} className="NavBar__list-item">
-                                <div> </div>
-                                <span>{item}</span>
+                                <a
+                                 onClick={()=>setActive(item)}
+                                 href={`#${item}`}
+                                 className={active===item?"NavBar__list-active":""}
+                                 >
+                                    {item}                                </a>
                             </li>
                     })
                     }

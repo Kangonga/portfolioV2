@@ -8,8 +8,12 @@ body {
 }
 :root {
   --primary-text-color:white;
-  --primary-text-color:#888888;
+  --secondary-text-color:#888888;
   --secondary-color: #cc005f;
+}
+*{
+  margin: 0;
+  padding: 0;
 }
 
 code {
