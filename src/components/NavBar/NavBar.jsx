@@ -14,7 +14,8 @@ export default function NavBar(){
                                  href={`#${item}`}
                                  className={active===item?"NavBar__list-active":""}
                                  >
-                                    {item}                                </a>
+                                    {item}
+                                </a>
                             </li>
                     })
                     }
