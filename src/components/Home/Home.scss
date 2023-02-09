@@ -1,0 +1,31 @@
+#Hero-Container {
+    // background-image: url("../../Assets/stars.jpg");
+    width:100vw;
+    opacity:.95;
+    height:88vh;
+    color:black;
+    overflow-x:hidden;
+    background-size:cover;
+    background-color:black;
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#Hero__Text-Container {
+    display:flex;
+    flex-direction:column;
+    color:white;
+
+    :first-child{
+        color:var(--secondary-color);
+        font-size: 2rem;
+    }
+    :nth-child(2){
+        font-size:5rem;
+    }
+    :last-child{
+        font-size:1rem;
+    }
+}
