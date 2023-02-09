@@ -5,6 +5,7 @@
     align-items: center;
     width: 100vw;
     background-color: black;
+    height: 12vh;
 }
 
 #NavList{
@@ -16,6 +17,9 @@
     text-align: right;
     padding-right: 2rem;
     position: sticky;
+    @media screen and (max-width:768px) {
+        display: none;
+    }
 }
 
 .NavBar__list-item {
@@ -35,4 +39,44 @@
 }
 .NavBar__list-active{
     color: var(--secondary-color);
+}
+
+#NavBar__dropdown {
+    width: 35vw;
+    min-height: 12vh;
+    // outline: 2px solid blueviolet;
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        height: 80vh;
+        // outline: 2px solid blue;
+        background-color: black;
+        padding: 0 1vh 5vh 5vh;
+    }
+    li:hover {
+        transition: .3s all ease-in-out;
+        color: var(--secondary-color);
+        cursor: pointer;
+    }
+    
+    button {
+        height: 2rem;
+        width: max-content;
+        padding: 0 1rem;
+        text-align: center;
+        line-height: 2rem;
+        margin: 0;
+        border-radius: 20px;
+        position: relative;
+        top: 3vh;
+    }
 }
