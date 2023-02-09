@@ -1,0 +1,38 @@
+#NavBar__main {
+    color: var(--primary-text-color); 
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100vw;
+    background-color: black;
+}
+
+#NavList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 10vh;
+    text-align: right;
+    padding-right: 2rem;
+    position: sticky;
+}
+
+.NavBar__list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar__list-item a{
+    padding: .5rem;
+    transition: .3s all ease-in-out;
+}
+.NavBar__list-item a:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.NavBar__list-active{
+    color: var(--secondary-color);
+}
