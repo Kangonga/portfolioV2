@@ -44,13 +44,13 @@
 #NavBar__dropdown {
     width: 35vw;
     min-height: 12vh;
-    // outline: 2px solid blueviolet;
     position: absolute;
     color: white;
     top: 0;
     right: 0;
     display: flex;
     flex-direction: column;
+    z-index:2;
 
     ul{
         display: flex;
