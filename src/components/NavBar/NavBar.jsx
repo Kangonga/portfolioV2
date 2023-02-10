@@ -1,8 +1,9 @@
-import { useState } from "react"
+import { useState,useContext } from "react"
 import "./NavBar.scss"
+import { AppContext } from "../../App"
 
 export default function NavBar(){
-    const [active,setActive] = useState("Home")
+    const {appContext,setAppContext} = useContext(AppContext)
     const [isTabOpen,setTabOpen] = useState(false)
     return (
         <>
@@ -11,9 +12,9 @@ export default function NavBar(){
                     {["Home","About","Work","Portfolio","Contact"].map((item,index)=>{
                         return <li key={`${item} ${index}`} className="NavBar__list-item">
                                 <a
-                                 onClick={()=>setActive(item)}
+                                 onClick={()=>setAppContext({...appContext, activeTab:item})}
                                  href={`#${item}`}
-                                 className={active===item?"NavBar__list-active":""}
+                                 className={appContext.activeTab===item?"NavBar__list-active":""}
                                  >
                                     {item}
                                 </a>
@@ -27,9 +28,9 @@ export default function NavBar(){
                    {["Home","About","Work","Portfolio","Contact"].map((item,index)=>{
                        return <li key={`${item} ${index}`} className="NavBar__dropdown-item">
                                <a
-                                onClick={()=>setActive(item)}
-                                href={`#${item}`}
-                                className={active===item?"NavBar__list-active":""}
+                                 onClick={()=>setAppContext({...appContext, activeTab:item})}
+                                 href={`#${item}`}
+                                 className={appContext.activeTab===item?"NavBar__list-active":""}
                                 >
                                    {item}
                                </a>

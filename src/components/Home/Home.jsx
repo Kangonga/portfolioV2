@@ -1,6 +1,9 @@
+import { useContext } from "react"
 import "./Home.scss"
+import { AppContext } from "../../App"
 
 export default function Home(){
+    const {appContext,setAppContext} = useContext(AppContext)
     return(
         <>
             <main id="Hero">
@@ -11,9 +14,11 @@ export default function Home(){
 
                     <p className="Hero__Text-subtext">
                         | Full stack software Engineer |
-                        </p>
+                    </p>
                 
                 </section>
+
+                <a href="#About" onClick={()=>setAppContext({...appContext,activeTab:"About"})}>About me</a>
             </main>
         </>
     )
