@@ -15,10 +15,14 @@ export default function Home(){
                     <p className="Hero__Text-subtext">
                         | Full stack software Engineer |
                     </p>
-                
+                    <a
+                        className="Hero__link-aboutMe" 
+                        href="#About" onClick={()=>setAppContext({...appContext,activeTab:"About"})}>
+                    About me &gt;&gt;
+                </a>
                 </section>
 
-                <a href="#About" onClick={()=>setAppContext({...appContext,activeTab:"About"})}>About me</a>
+                
             </main>
         </>
     )
