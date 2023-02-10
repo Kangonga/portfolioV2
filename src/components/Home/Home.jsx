@@ -3,7 +3,7 @@ import "./Home.scss"
 export default function Home(){
     return(
         <>
-            <main id="Hero-Container">
+            <main id="Hero">
                 <section id="Hero__Text-Container">
                     <p className="Hero__Text-intro">Hello, World.</p>
 
