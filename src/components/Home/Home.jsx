@@ -1,6 +1,8 @@
 import { useContext, useState } from "react"
 import "./Home.scss"
 import { AppContext } from "../../App"
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Home(){
     const {appContext,setAppContext} = useContext(AppContext)
@@ -24,6 +26,8 @@ export default function Home(){
                         href="#About" onClick={()=>{handleClick();setAppContext({...appContext,activeTab:"About"})}}>
                     About me &gt;&gt;
                 </a>
+                <GitHubIcon className="Hero-icons" />
+                <LinkedInIcon />                
                 </section>
 
                 
