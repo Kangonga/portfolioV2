@@ -26,8 +26,11 @@ export default function Home(){
                         href="#About" onClick={()=>{handleClick();setAppContext({...appContext,activeTab:"About"})}}>
                     About me &gt;&gt;
                 </a>
-                <GitHubIcon className="Hero-icons" />
-                <LinkedInIcon />                
+                <section className="Hero-icons">
+                <GitHubIcon />
+                <LinkedInIcon />
+                </section>
+                
                 </section>
 
                 
