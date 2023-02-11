@@ -1,7 +1,10 @@
+import { createContext, useState } from 'react';
+
+
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home'
-import { createContext, useState } from 'react';
+import About from './components/About/About';
 
 export const AppContext = createContext(null)
 
@@ -14,6 +17,7 @@ function App() {
       <div id="App">
       <NavBar />
       <Home />
+      <About />
     </div>
     </AppContext.Provider>
 

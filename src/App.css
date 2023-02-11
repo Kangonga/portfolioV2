@@ -1,5 +1,7 @@
 /* General Styles */
-
+#App {
+    transition: .3s  ease-in-out;
+}
 li {
     list-style-type: none;
 }

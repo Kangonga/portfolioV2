@@ -55,10 +55,10 @@
 }
 
 .Hero__link-aboutMe {
-    width: 30%;
+    width: max-content;
     border: 2px solid white;
     border-radius: 20px;
     height: 3rem;
     line-height: 3rem;
-    padding-left: 1rem;
+    padding: 0 1rem;
 }

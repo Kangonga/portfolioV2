@@ -1,12 +1,16 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import "./Home.scss"
 import { AppContext } from "../../App"
 
 export default function Home(){
     const {appContext,setAppContext} = useContext(AppContext)
+    const [slideUp, setSlideUp] = useState(false)
+    const handleClick = ()=>{
+        
+    }
     return(
         <>
-            <main id="Hero">
+            <main id="Hero" className={slideUp?"slideUp":""}>
                 <section id="Hero__Text-Container">
                     <p className="Hero__Text-intro">Hello, World.</p>
 
@@ -17,7 +21,7 @@ export default function Home(){
                     </p>
                     <a
                         className="Hero__link-aboutMe" 
-                        href="#About" onClick={()=>setAppContext({...appContext,activeTab:"About"})}>
+                        href="#About" onClick={()=>{handleClick();setAppContext({...appContext,activeTab:"About"})}}>
                     About me &gt;&gt;
                 </a>
                 </section>
