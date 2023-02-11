@@ -27,10 +27,8 @@
 #Hero__Text-Container {
     display:flex;
     flex-direction:column;
-    gap: 1rem;
     color:white;
     padding:.5rem;
-    // outline: 2px solid wheat;
 
     :first-child{
         color:var(--secondary-color);
@@ -38,6 +36,7 @@
     }
     :nth-child(2){
         font-size:8rem;
+        margin: .5rem 0;
 
         @media (max-width:1024px){
             font-size: 7rem;
@@ -51,9 +50,10 @@
     }
     :nth-child(3){
         font-size:1rem;
+        margin: .5rem 0;
     }
     :nth-child(4){
-        margin-top: 4rem;
+        margin: 2rem 0 4rem 0;
     }
 }
 
@@ -64,4 +64,16 @@
     height: 3rem;
     line-height: 3rem;
     padding: 0 1rem;
+}
+.Hero-icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    svg{
+        // background-color: white;
+        // width: 40%;
+        color: white;
+        height: 5vh;
+        border-radius: 50%;
+    }
 }
