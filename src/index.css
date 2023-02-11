@@ -12,6 +12,7 @@ body {
   --primary-text-color:white;
   --secondary-text-color:#888888;
   --secondary-color: #cc005f;
+  scroll-behavior: smooth;
 }
 *{
   margin: 0;
