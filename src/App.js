@@ -1,5 +1,5 @@
 import { createContext, useState } from 'react';
-
+import { BrowserRouter } from 'react-router-dom';
 
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
@@ -13,13 +13,16 @@ function App() {
     activeTab:"Home",
   })
   return (
-    <AppContext.Provider value={{appContext, setAppContext}}>
+    <BrowserRouter>
+        <AppContext.Provider value={{appContext, setAppContext}}>
       <div id="App">
       <NavBar />
       <Home />
       <About />
-    </div>
+      </div>
     </AppContext.Provider>
+    </BrowserRouter>
+
 
   );
 }
