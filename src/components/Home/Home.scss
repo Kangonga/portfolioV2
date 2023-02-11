@@ -66,12 +66,21 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     svg{
         // background-color: white;
         // width: 40%;
         color: white;
-        height: 5vh;
+        height: 6vh;
         border-radius: 50%;
         cursor: pointer;
+        fill: var(--secondary-color);
     }
+}
+.test {
+    color: #fc0;
 }
