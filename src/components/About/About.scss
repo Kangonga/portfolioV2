@@ -2,7 +2,9 @@
     height: max-content;
     width: 100vw;
     overflow-x: hidden;
-    padding: 1rem;
+    padding: 2rem 1rem;
+    background-color: #f1f1f1;
+
 }
 #About__Container {
     display: flex;
@@ -12,9 +14,15 @@
     section {
         width: 45%;
     }
+    h1 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: var(--secondary-color);
+    }
     @media screen and (max-width:1024px) {
         flex-direction: column;
-        gap: 2rem;
+        gap: 4rem;
 
         section {
             width: 70%;
@@ -23,41 +31,81 @@
     }
 }
 .About__Container-profile {
-    outline: 1px solid rebeccapurple;
-    padding: 1rem;
-    
-    h1 {
-        font-size: 2rem;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
+    color: rgb(80, 83, 83); 
 
     p {
         font-size: 1rem;
-        color: rgb(24, 23, 23);
     }
 }
-.About__Container-skills {
-    outline: 2px solid springgreen;
-    text-align: center;
 
-    h1 {
+.About__Container-skills {
+    text-align: center;
+    p {
         margin-bottom: 2rem;
-        font-size: 2rem;
     }
 }
+
 .About__Container-skillsList {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1rem;
-    div {
-        // width: minmax(20vw,30%);
-        min-width: 12rem;
-        flex-basis: 30%;
-        background-color: var(--secondary-color);
-        height: 20vh;
+
+    figure {
+        min-width: 8rem;
+        flex-basis: 25%;
+        height: 10vh;
         border-radius: 10px;
+
+        img {
+            height: 100%;
+            border-radius: 10px;
+        }
+        &:last-child {
+            img {
+                height: 90%;
+            }
+        }
     }
-    padding: 0 .5rem .5rem .5rem;
+}
+.About__links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 5rem 0 0 0;
+
+    a {
+        width: max-content;
+        font-family: inherit;
+        padding: .8rem 2rem;
+        border-radius: 5px;
+        border: none;
+        font-size: 1rem;
+
+        &:first-child{
+            background-color: black;
+            color: var(--secondary-color);
+
+            &:hover {
+                background-color: var(--secondary-color);
+                color: black;
+                transition: .3s all ease-in-out;
+            }
+        }
+        &:nth-child(2){
+            border: 1px solid var(--secondary-color);
+            &:hover {
+                background-color:black;
+                color: var(--secondary-color);
+                transition: .3s all ease-in-out;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+        }
+
+        @media screen and (min-width:1024px) {
+            padding: 1.2rem 5rem;
+        }
+    }
 }

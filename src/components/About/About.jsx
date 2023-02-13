@@ -1,4 +1,6 @@
 import "./About.scss"
+import {images} from "../../Assets"
+import cv from "../../Assets/KevinCV.pdf"
 
 export default function About(){
     return(
@@ -7,22 +9,50 @@ export default function About(){
             <section className="About__Container-profile">
                 <h1>About me</h1>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non saepe id alias repellat beatae sunt suscipit exercitationem consequuntur vitae qui. Excepturi, dolorum praesentium velit soluta tempore aperiam adipisci ipsam autem!
-                    Nihil itaque quasi enim recusandae, aut eveniet iure aspernatur quisquam temporibus autem quod non in accusamus eius labore error possimus laudantium tempora qui animi dolores voluptas nisi architecto! Omnis, soluta.
+                    Hi there! My name is Kevin Guchu.
+                    I help businesses, agencies and designers bring their concepts to life using code. 
                 </p>
-               
+                <br />
+               <p>
+                    Being adaptable, whether to new technologies and situations. is very important to me, thus I am always learning something new. And I enjoy it.
+               </p>
             </section>
 
             <section className="About__Container-skills">
                 <h1>Skills</h1>
+                <p>
+                These are some of my most used tools of trade.
+
+                </p>
                 <div className="About__Container-skillsList">
-                    <div className="skills-item">html css</div>
-                    <div className="skills-item">html css</div>
-                    <div className="skills-item">html css</div>
-                    <div className="skills-item">html css</div>
+                        <figure>
+                            <img src={images.javascript} alt="" />
+                        </figure>
+                        <figure>
+                            <img src={images.node} alt="" />
+                        </figure>
+                        <figure>
+                            <img src={images.react} alt="" />
+                        </figure>
+                        <figure>
+                            <img src={images.Angular} alt="" />
+                        </figure>
+                        <figure>
+                            <img src={images.typescript} alt="" />
+                        </figure>
                 </div>
                 
             </section>
+
+            
+        </section>
+        <section className="About__links">
+                <a href={cv}  target="_blank" rel="noreferrer">
+                    Download cv
+                </a>
+                <a href="#Contact">
+                    Contact me
+                </a>
         </section>
     </main>
     )

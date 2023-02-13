@@ -5,7 +5,8 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home'
 import About from './components/About/About';
-
+import Portfolio from "./components/Portfolio/Portfolio"
+import Contact from "./components/Contact/Contact"
 export const AppContext = createContext(null)
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
       <NavBar />
       <Home />
       <About />
+      <Portfolio />
+      <Contact />
+
       </div>
     </AppContext.Provider>
     </BrowserRouter>

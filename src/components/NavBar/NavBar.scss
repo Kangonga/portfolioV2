@@ -6,6 +6,7 @@
     width: 100vw;
     background-color: black;
     height: 12vh;
+    // background: rgba(10, 9, 9, 0.8);
 }
 
 #NavList{
@@ -16,7 +17,6 @@
     height: 10vh;
     text-align: right;
     padding-right: 2rem;
-    position: sticky;
     @media screen and (max-width:768px) {
         display: none;
     }
