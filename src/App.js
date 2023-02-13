@@ -20,7 +20,7 @@ function App() {
       <NavBar />
       <Home />
       <About />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Contact />
 
       </div>
