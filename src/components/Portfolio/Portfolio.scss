@@ -1,6 +1,6 @@
 #Portfolio {
     background-color: rgb(228, 228, 228);
-    height: 80vh;
+    height: max-content;
     text-align: center;
     padding: 1rem 0;
 }
@@ -10,9 +10,12 @@
     justify-content: space-evenly;
     gap: 1rem;
     padding: 2rem .5rem;
+    padding-right: 1.2rem;
+
 
     div{
-        width: 11rem;
+        min-width: 11rem;
+        width: 12rem;
         background-color: white;
         padding: 1rem;
         border-radius: 5px;
@@ -21,14 +24,14 @@
         flex-direction: column;
         justify-content: space-between;
         gap: .5rem;
-
+        height: max-content;
         @media screen and (min-width:768px) {
             width: 20rem;
         }
 
         figure{
             width: 95%;
-            height: 70%;
+            height: 10rem;
             display: flex;
             justify-content: center;
             align-items: center;
