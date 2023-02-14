@@ -1,0 +1,42 @@
+#Portfolio {
+    background-color: rgb(228, 228, 228);
+    height: 80vh;
+    text-align: center;
+    padding: 1rem 0;
+}
+.Portfolio-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 2rem .5rem;
+
+    div{
+        width: 11rem;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 5px;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: .5rem;
+
+        figure{
+            // background-color: rebeccapurple;
+            width: 90%;
+            height: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid var(--secondary-color);
+        }
+        img {
+            width: 95%;
+        }
+        p {
+            text-align: left;
+            color: darkslategray;
+        }
+    }
+}

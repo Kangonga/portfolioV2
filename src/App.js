@@ -13,14 +13,23 @@ function App() {
   const [appContext,setAppContext] = useState({
     activeTab:"Home",
   })
+  const [visitorData,setVisitorData] = useState({
+    name:"",
+    email:"",
+    subject:"",
+    message:""
+  })
   return (
     <BrowserRouter>
-        <AppContext.Provider value={{appContext, setAppContext}}>
+        <AppContext.Provider value={{
+          appContext, setAppContext,
+          visitorData,setVisitorData
+          }}>
       <div id="App">
       <NavBar />
       <Home />
       <About />
-      {/* <Portfolio /> */}
+      <Portfolio />
       <Contact />
 
       </div>
