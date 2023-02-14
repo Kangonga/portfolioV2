@@ -22,17 +22,22 @@
         justify-content: space-between;
         gap: .5rem;
 
+        @media screen and (min-width:768px) {
+            width: 20rem;
+        }
+
         figure{
-            // background-color: rebeccapurple;
-            width: 90%;
-            height: 60%;
+            width: 95%;
+            height: 70%;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid var(--secondary-color);
+            // border: 2px solid var(--secondary-color);
+
+
         }
         img {
-            width: 95%;
+            height: 100%;
         }
         p {
             text-align: left;
